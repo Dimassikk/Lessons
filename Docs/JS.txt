@@ -1,0 +1,143 @@
+1. ТИПИ ДАНИХ ТА ЗМІННІ
+
+Типи даних:
+- numbers: 5, 6, 7.34, etc
+- strings: "test", "text", etc
+- boolean: true, false
+- undefined - неозначено
+- null - пусте значення
+
+=============================
+
+Змінні-константи:
+
+var/let/const
+
+var test = "Hello!";
+let proba = 5;
+const stable = 77;
+
+=============================
+
+Інкрементування та декрементування:
+
+var test = 0;
+++test;
+1;
+++test;
+2;
+--test;
+1;
+
+var test2 = 0;
+test2++;
+0
+test2++;
+1
+test2;
+2
+
+============================
+
++=, -=
+
+var x = 10;
+x += 7;
+17
+x -= 3;
+14
+
+============================
+
+Рядки
+
+"test".length;
+4
+
+var longString = "My long string is long";
+longString.slice(3, 14);
+"long string"
+
+longString.toUpperCase();
+longString.toLowerCase();
+
+============================
+
+Булеві Змінні
+
+&& (I)
+
+|| (АБО)
+
+! (НЕ)
+
+>, >=, <, <= (БІЛЬШЕ НІЖ, МЕНШЕ НІЖ)
+
+==, === (РІВНИЙ ДО, ПОДВІЙНИЙ ЗНАК РІВНОСТІ, ПОТРІЙНИЙ ЗНАК РІВНОСТІ)
+
+
+var stringNumber = "5";
+var actualNumber = 5;
+stringNumber === actualNumber;
+false
+stringNumber == actualNumber; // (не використовується)
+true
+
+=============================
+
+2. МАСИВИ (ARRAYS)
+
+[];
+[]
+
+var arr1 = []; // пустий масив
+var arr2 = [5, "test", true]; // ініциалізований масив
+
+arr2[1];
+test
+
+var arr3 = [5, 6, ["test", 123]];
+arr3[2][1];
+123
+
+arr3.length;
+3
+
+var arr4 = [];
+arr4.push("test");
+arr4.pop();
+test
+
+==============================
+
+arr4.unshift("test") // теж саме що й push/pop, але бере початок масиву, а не кінець
+arr4.shift()
+test
+
+==============================
+
+Поєднування масивів
+
+var arr5 = arr3.concat(arr4); // поєднує два масиви
+var arr5 = arr4.concat(arr2, arr3); // поєднує більш ніж два масиви
+
+==============================
+
+Пошук у масиві indexOf()
+
+var colors = ["red", "green", "blue"];
+colors.indexOf("blue");
+2
+colors.indexOf("green");
+1
+
+==============================
+
+Перетворюємо масив у рядок join()
+
+var colors = ["red", "green", "blue"];
+colors.join();
+"red,green,blue"
+
+
+
