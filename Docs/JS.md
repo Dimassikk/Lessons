@@ -168,5 +168,85 @@ var colors = ["red", "green", "blue"];
 colors.join();
 "red,green,blue"
 ```
+<h2>
+
+```diff
++ 3. ОБ'ЄКТИ 
+```
+</h2>
+ОБ'ЄКТ МАЄ ПОВНУ ІНФОРМАЦІЮ ПРО 1 ЗМІННУ
+
+-------
+
+### Створення об'єкта 
+```js
+var cat = {
+    "legs": 3,
+    "head": 1,
+    "color": "red"
+};
+```
+==============================
+### Видобування значення із об'єкта
+```js
+cat["name"];
+"Harmony"
+```
+
+Або через крапку (cat.name).
+
+==============================
+### Додавання ключів через крапку
+```js
+var cat = {} // пустий об'єкт
+cat.legs = 3;
+cat.name = "Bob1k";
+cat.color = "shamanamanam"; // ключ об'єкта
+```
+==============================
+### Поєднання масива та об'єкта (Масив в об'єкті та об'єкт в масиві)
+
+### Обєкт в масиві
+```js
+var dinosaurs = [
+    { name: "T-Rex", period: "late jurassssik" },
+    { name: "Abobazayr", period: "same" }
+];
+```
+### Видобуваємо значення
+```js
+dinosaurs[0]["name"];
+"T-Rex";
+```
+### Масив в об'єкті
+```js
+var anna = { name: "Anna", age: 11, luckyNambers: [1, 2, 3, 4] };
+var dave = { name: "Dave", age: 99, luckyNumbers: [1, 2, 3, 4] };
+
+var friends = [anna, dave]
+```
+===============================
+### Збільшення значень в ключах об'єкта
+```js
+var owedMoney = {};
+owedMoney["Jimmy"] = 5;
+--
+owedMoney["Jimmy"] += 3;
+--
+owedMoney["Jimmy"];
+8
+```
+<h2>
+
+```diff
++ 4. ОСНОВИ HTML
+```
+</h2>
+
+### Перші кроки у створенні веб сторінки
+```html
+<h1>Hello world! </h1> // в кінці завжди ставимо /, наприклад </h1>. 
+<p> My first web page.</p>   // <h1> - заголовок сайту 
+                                //<p> -  для поділу тексту на абзаци
 
 
