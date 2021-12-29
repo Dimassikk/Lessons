@@ -171,7 +171,7 @@ colors.join();
 <h2>
 
 ```diff
-+ 3. ОБ'ЄКТИ 
++ 3. ОБ'ЄКТИ (OBJECTS)
 ```
 </h2>
 ОБ'ЄКТ МАЄ ПОВНУ ІНФОРМАЦІЮ ПРО 1 ЗМІННУ
@@ -193,7 +193,11 @@ cat["name"];
 "Harmony"
 ```
 
-Або через крапку (cat.name).
+Або через крапку:
+
+```js
+cat.name
+```
 
 ==============================
 ### Додавання ключів через крапку
@@ -242,6 +246,14 @@ owedMoney["Jimmy"];
 + 4. ОСНОВИ HTML
 ```
 </h2>
+
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
 
 ### Перші кроки у створенні веб сторінки
 ```html
