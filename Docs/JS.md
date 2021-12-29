@@ -247,6 +247,14 @@ owedMoney["Jimmy"];
 ```
 </h2>
 
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
+
 ### Перші кроки у створенні веб сторінки
 ```html
 <h1>Hello world! </h1> // в кінці завжди ставимо /, наприклад </h1>. 
