@@ -245,8 +245,39 @@ owedMoney["Jimmy"];
 
 ### Перші кроки у створенні веб сторінки
 ```html
-<h1>Hello world! </h1> // в кінці завжди ставимо /, наприклад </h1>. 
-<p> My first web page.</p>   // <h1> - заголовок сайту 
-                                //<p> -  для поділу тексту на абзаци
+<h1>Hello world! </h1>  ======// в кінці завжди ставимо /, наприклад </h1>. 
+<p> My first web page.</p> ===  // <h1> - заголовок сайту 
+ <em>first</em>             ==  // <p> - для поділу на абзаци 
+ <strong>page</strong>      ==
+                            ==
+                            == //<em> - видозмінює текст курсивом
+                            ==      //<strong> - теж саме, але текст стає ============================== жирним (також елменти <em> та <strong> можна поєднувати)
+```
+### Структура цілих HTML документів
+```js
+<!DOCTYPE html> - //оголошення що це Html документ
+<html>
+    <head> - //зберігає відображаємий вміст 
+        <title> </title> - //робить заголовок вікна сайту
+        <script>var name = prompt("Whats your name?");
+        console.log("Hello " + name);
+        </script>
+    </head>
+    </html>
+```
+### Додавання посилань на сайт
+```js
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+
+    <body>
+    <p>Let's add another <strong><em>paragraph</em></e></strong>.</p>
+    <p><a href="http://xkcd.com">Click here </a>to red some excellent comics.</p>
+    </body>
+    </html>
+    ```
 
 
