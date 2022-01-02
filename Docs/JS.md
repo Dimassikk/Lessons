@@ -176,6 +176,15 @@ colors.join();
 </h2>
 ОБ'ЄКТ МАЄ ПОВНУ ІНФОРМАЦІЮ ПРО 1 ЗМІННУ
 
+```js
+{ "key1": 99 }
+  /         \
+Ключ є      Значення,
+завжди      що може бути
+рядком      різних видів
+            (number, string, boolean, etc)
+```
+
 -------
 
 ### Створення об'єкта 
@@ -259,37 +268,65 @@ owedMoney["Jimmy"];
 ```html
 <h1>Hello world! </h1>  ======// в кінці завжди ставимо /, наприклад </h1>. 
 <p> My first web page.</p> ===  // <h1> - заголовок сайту 
- <em>first</em>             ==  // <p> - для поділу на абзаци 
- <strong>page</strong>      ==
-                            ==
-                            == //<em> - видозмінює текст курсивом
-                            ==      //<strong> - теж саме, але текст стає ============================== жирним (також елменти <em> та <strong> можна поєднувати)
+<em>first</em>             ==  // <p> - для поділу на абзаци 
+<strong>page</strong>      ==
+                           ==
+                           == //<em> - видозмінює текст курсивом
+                           ==      //<strong> - теж саме, але текст стає ============================== жирним (також елменти <em> та <strong> можна поєднувати)
 ```
-### Структура цілих HTML документів
-```js
+### Структурно цілий HTML документ
+```html
 <!DOCTYPE html> - //оголошення що це Html документ
 <html>
-    <head> - //зберігає відображаємий вміст 
-        <title> </title> - //робить заголовок вікна сайту
-        <script>var name = prompt("Whats your name?");
-        console.log("Hello " + name);
-        </script>
-    </head>
-    </html>
+<head> - //зберігає відображаємий вміст 
+    <title> </title> - //робить заголовок вікна сайту
+    <script>var name = prompt("Whats your name?");
+    console.log("Hello " + name);
+    </script>
+</head>
+
+<body>
+    <h1>Hello, world!</h1>
+    <p>Let's add another <strong><em>paragraph</em></e></strong>.</p>    
+</body>
+</html>
 ```
 ### Додавання посилань на сайт
-```js
+```html
 <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-    </head>
+<head>
+    <title>My first proper HTML page</title>
+</head>
 
-    <body>
+<body>
     <p>Let's add another <strong><em>paragraph</em></e></strong>.</p>
     <p><a href="http://xkcd.com">Click here </a>to red some excellent comics.</p>
-    </body>
-    </html>
-    ```
+</body>
+</html>
+```
+
+<h2>
+
+```diff
++ 5. УМОВНІ ВИРАЗИ ТА ЦИКЛИ (if-else, for)
+```
+</h2>
+
+```js
+    // Щось, що є або true або false
+        /
+if (condition1) {
+    console.log("Якщо condition1 === true");
+else if (condition2) {
+    console.log("Якщо condition2 === true");
+else if (condition3) {
+    console.log("Якщо condition3 === true");
+} else {
+    console.log("Якщо condition1, condition2 та condition3 === false");
+}
+```
+
+
 
 

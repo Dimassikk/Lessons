@@ -1,21 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My first proper HTML page</title>
-    </head>
 
-    <body>
-</html><h1>Hello world!</h1>
+<head>
+    <title>My first proper HTML page</title>
+</head>
+
+<body>
+
+</html>
+<h1>Hello world!</h1>
 <p>My <em>first</em> <strong>web page</strong>.</p>
 <script>
-var likesCats = confirm("do you like cats?");
-if (likeCats) {
-    console.log("You're a cool cat!");
-} else {
-    console.log("You still cool!");
-}
+    var likesCats = confirm("Do you like cats?");
+    if (likesCats) {
+        console.log("You're a cool cat!");
+    } else {
+        console.log("You still cool!");
+    }
+
+    var catFunc = function () {
+        var dumb = false;
+        // var smart = true;
+        var smart = false;
+        var likesCats = confirm("do you like cats?");
+        if (likesCats) {
+            document.write("You're a cool cat!");
+        } else if (dumb) {
+            document.write("You're stupid!");
+        } else if (smart) {
+            document.write("You're smart!");
+        } else {
+            document.write("You still cool!");
+        }
+    }
 </script>
-    <p>Let's add another <strong><em>paragraph</em></e></strong>.</p>
-    <p><a href="http://xkcd.com">Click here </a>to red some excellent comics.</p>
-    </body>
-    </html>
+<p>Let's add another <strong><em>paragraph</em></e></strong>.</p>
+<p><a href="http://xkcd.com">Click here </a>to red some excellent comics.</p>
+<input type="button" onclick="catFunc()" value="Display">
+</body>
+
+</html>
