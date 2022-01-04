@@ -249,10 +249,14 @@ owedMoney["Jimmy"] += 3;
 owedMoney["Jimmy"];
 8
 ```
+
+
 <h2>
 
+```diff
 + 4. ОСНОВИ HTML
 ```
+</h2>
 
 ```diff
 - text in red
@@ -300,12 +304,29 @@ owedMoney["Jimmy"];
 <body>
     <p>Let's add another <strong><em>paragraph</em></e></strong>.</p>
     <p><a href="http://xkcd.com">Click here </a>to red some excellent comics.</p>
-    </body>
-    </html>
+</body>
+</html>
 ```
     
+<h2>
 
-+ 4. УМОВНІ ВИРАЗИ ТА ЦИКЛИ
+```diff
++ 5. УМОВНІ ВИРАЗИ ТА ЦИКЛИ (if-else, for)
+```
+</h2>
+
+```js
+    // Щось, що є або true або false
+        /
+if (condition1) {
+    console.log("Якщо condition1 === true");
+else if (condition2) {
+    console.log("Якщо condition2 === true");
+else if (condition3) {
+    console.log("Якщо condition3 === true");
+} else {
+    console.log("Якщо condition1, condition2 та condition3 === false");
+}
 ```
 
 ```js
@@ -314,7 +335,7 @@ owedMoney["Jimmy"];
 А цикл буде винувати дію, доки її значення залишається true
 ```
 ```js
-(Приклад умовного вираза)
+// Приклад умовного вираза
 
 var lemonChikecken = false;
 var beefWithBlack = true;
@@ -322,7 +343,7 @@ var sweetAndChtotoTam = true;
 if (lemonChikecken) {
     console.log("Great, i have lemon chicken!!!!!!!!!!!");
 } else if (beefWithBlack) {
-console.log("OK, i have beef.");
+    console.log("OK, i have beef.");
 } else if (sweetAndChtotoTam); {
     console.log("blyat,chtoto tam,ladno(((");
 
