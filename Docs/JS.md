@@ -242,10 +242,8 @@ owedMoney["Jimmy"];
 ```
 <h2>
 
-```diff
 + 4. ОСНОВИ HTML
 ```
-</h2>
 
 ```diff
 - text in red
@@ -278,7 +276,7 @@ owedMoney["Jimmy"];
     </html>
 ```
 ### Додавання посилань на сайт
-```js
+```html
 <!DOCTYPE html>
 <html>
     <head>
@@ -290,6 +288,38 @@ owedMoney["Jimmy"];
     <p><a href="http://xkcd.com">Click here </a>to red some excellent comics.</p>
     </body>
     </html>
-    ```
+```
+    
 
++ 4. УМОВНІ ВИРАЗИ ТА ЦИКЛИ
+```
 
+```js
+(Скорочене пояснення умовних виразів та циклів)
+Умовний вираз твердить: "Якщо якщо якесь твердження має значення true, то вчнітть так, та навпаки"
+А цикл буде винувати дію, доки її значення залишається true
+```
+```js
+(Приклад умовного вираза)
+
+var lemonChikecken = false;
+var beefWithBlack = true;
+var sweetAndChtotoTam = true;
+if (lemonChikecken) {
+    console.log("Great, i have lemon chicken!!!!!!!!!!!");
+} else if (beefWithBlack) {
+console.log("OK, i have beef.");
+} else if (sweetAndChtotoTam); {
+    console.log("blyat,chtoto tam,ladno(((");
+
+    //Функція буде виконуватись поки не знайдеться значення true, якщо значення true не буде, функція не дасть відповіді
+}
+```
+### Твердження
+```js
+if - буде виконувати функцію тільки якщо її значення буде True.
+
+else - буде виконувати тільки з False.
+
+a else if - може виконувати, із тим, і з тим.
+```
