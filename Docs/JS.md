@@ -358,3 +358,86 @@ else - буде виконувати тільки з False.
 
 a else if - може виконувати, із тим, і з тим.
 ```
+### Цикли
+```js
+//while цикли - це найпростіші цикли, які виконують функцію поки конкретна умова не стає false, або іншими словами втрачає значення true.
+```
+### Задача з while циклом
+```js
+var sheepsCounted = 0;
+while (sheepCounted < 10) {
+    console.log("i have counted" + sheepCounted + " sheep!");
+    sheepCounted++;
+}
+console.log("Zzzzzzzzzz");
+
+//Відповідь повинна бути така
+
+i have counted 0 sheeps!
+i have counted 1 sheeps!
+i have counted 2 sheeps!
+i have counted 3 sheeps!
+i have counted 4 sheeps!
+i have counted 5 sheeps!
+i have counted 6 sheeps!
+i have counted 7 sheeps!
+i have counted 8 sheeps!
+i have counted 9 sheeps!
+Zzzzzzzzzz
+```
+### for-цикли
+```js
+//for цикл - продовжує функцію стільки, скільки ви їй скажете (поки не набуде значення true)
+
+Приклад:
+
+var timesToSayHello = 3;
+for (var i = 0; i < timesToSayHello; i++) {
+    console.log("Hello");
+};
+
+Що повинно вийти:
+
+Hello
+Hello
+Hello
+```
+### Поєднуємо вивчені цикли із масивами та рядками
+```js
+var animals = ["leon", "Abobys", "Chiwap-chichiwap"];
+for (var i = 0; i < animals.length; i++) {
+    console.log("This zoo contains a " + animals[i] + ".")
+}
+
+Що повинно вийти:
+
+This zoo contains a leon.
+
+This zoo contains a Abobys.
+
+This zoo contains a Chiwap-chichiwap.
+```
+### Використання циклів у множенні
+```js
+for (var x = 2; x < 10000; x = x * 2) {
+    console.log(x);
+}
+
+Що повинно вийти:
+
+2
+4
+8
+16
+32
+64
+128
+256
+512
+1024
+2048
+4096
+8192
+```
+
+
