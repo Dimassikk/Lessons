@@ -439,5 +439,64 @@ for (var x = 2; x < 10000; x = x * 2) {
 4096
 8192
 ```
+### Створюємо гру "Вбий негра" з вивченого
+
+```js
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>"Вбий негра!"</title>
+</head>
+
+<body>
+    <h1>"Вбий негра!"</h1>
+    <script>
+        var words = [  //Створюємо слова які будуть обрані випадково
+            "javascript",
+            "monkey",
+            "amazing",
+            "pancake",
+            "milk",
+            "PIDORASSSSSSSSSSS",
+            "car",
+            "kykyryza",
+            "jopa",
+            "DimaNeBot"
+    
+
+
+        ];
+        var word = words[Math.floor(Math.random() * words.length)];
+        var answerArray = [];                 //Робимо команду для випадковості
+        for (var i = 0; i < word.length; i++) {
+            answerArray[i] = "_";
+        }
+
+        var remainingLetters = word.length; //Процес вигадування слів
+        while (remainingLetters > 0) {
+            alert(answerArray.join(" "));
+            var guess = prompt("Guess a letter, or click Cancel to stop playing."); //умова перед грою
+            if (guess === null) {
+                break;
+            } else if (guess.length !== 1) {
+                alert("Please enter a single letter."); //Робимо видачу помилки, якщо написано більш ніж 1 буква
+            } else {
+                for (var j = 0; j < word.length; j++) {
+                    if (word[j] === guess) {
+                        answerArray[j] = guess;
+                        remainingLetters--;
+                    }
+                }
+            }
+        }
+        alert(answerArray.join(" "));
+        alert("Good job! The answer was " + word); //Оповішення о перемозі
+    </script>
+</body>
+
+</html>
+```
+
 
 
