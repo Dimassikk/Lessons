@@ -447,12 +447,12 @@ for (var x = 2; x < 10000; x = x * 2) {
 <html>
 
 <head>
-    <title>"Вбий негра!"</title>
+    <title>"Вбий негра!"</title> 
 </head>
 
 <body>
     <h1>"Вбий негра!"</h1>
-    <script>
+    <script> //Робимо у Html файлі у рядковому елементі script
         var words = [  //Створюємо слова які будуть обрані випадково
             "javascript",
             "monkey",
@@ -469,14 +469,14 @@ for (var x = 2; x < 10000; x = x * 2) {
 
         ];
         var word = words[Math.floor(Math.random() * words.length)];
-        var answerArray = [];                 //Робимо команду для випадковості
+        var answerArray = [];                 //Робимо команду для випадковості слів
         for (var i = 0; i < word.length; i++) {
             answerArray[i] = "_";
         }
 
-        var remainingLetters = word.length; //Процес вигадування слів
+        var remainingLetters = word.length;  
         while (remainingLetters > 0) {
-            alert(answerArray.join(" "));
+            alert(answerArray.join(" ")); //Процес вигадування слів
             var guess = prompt("Guess a letter, or click Cancel to stop playing."); //умова перед грою
             if (guess === null) {
                 break;
@@ -486,7 +486,7 @@ for (var x = 2; x < 10000; x = x * 2) {
                 for (var j = 0; j < word.length; j++) {
                     if (word[j] === guess) {
                         answerArray[j] = guess;
-                        remainingLetters--;
+                        remainingLetters--; //Перевіряємо, чи 1 буква та чи вгадав гравець букву
                     }
                 }
             }
