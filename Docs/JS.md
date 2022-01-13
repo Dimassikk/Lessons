@@ -480,8 +480,8 @@ for (var x = 2; x < 10000; x = x * 2) {
             var guess = prompt("Guess a letter, or click Cancel to stop playing."); //умова перед грою
             if (guess === null) {
                 break;
-            } else if (guess.length !== 1) {
-                alert("Please enter a single letter."); //Робимо видачу помилки, якщо написано більш ніж 1 буква
+            } else if (guess.length !== 1) {  //Робимо видачу помилки, якщо написано більш ніж 1 буква
+                alert("Please enter a single letter.");
             } else {
                 for (var j = 0; j < word.length; j++) {
                     if (word[j] === guess) {
