@@ -493,11 +493,67 @@ for (var x = 2; x < 10000; x = x * 2) {
         }
         alert(answerArray.join(" "));
         alert("Good job! The answer was " + word); //Оповішення о перемозі
-    </script>
+    </script> 
 </body>
 
 </html>
 ```
+<h2>
 
+```diff
++ 5. ФУНКЦІЇ (FUNCTION)
+```
+</h2>
 
+```js 
+// ФУНКЦІЯ - ЦЕ СПОСІБ СКЛАДАННЯ КОДУ, ЯКИЙ ДОЗВОЛЯЄ ЙОГО ПОВТОРНЕ ВИКОРИСТАННЯ. ЗА ДОПОМОГОЮ ФУНКЦІЇ ОДИН И ТОЙ САМИЙ ВІДРІЗОК КОДУ ВИКОРИСТОВУВАТИ ДЕКІЛЬКА РАЗІВ ТА У РІЗНИХ ЧАСТИНАХ КОДУ.
+```
+```JS
+ Анатомія функції
+          / Аргумент
+function () {
+/       console.log("Ky world!!!!!!")
+функція    
+}
+``` 
+```js
+Створюємо просту функцію
 
+var ourFirstFunction = function () {
+    console.log("Ky world!!!!!!");
+}
+=====================================
+
+ourFirstFunction();
+Ky world!!!!!!
+```
+```js
+Придаємо функції "аргумент"
+
+var sayHelloTo = function (name) {
+    console.log("Hello " + name + "!");
+};
+========================================
+sayHelloTo("Nick");
+Hello Nick!
+========================================
+sayHelloTo("PIDORASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS");
+Hello PIDORASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS!
+```
+```js
+Функція яка робе котячі мордочки
+
+var drawCats = function (howMenyTimes) {
+    for (var i = 0; i < howMenyTimes; i++) {
+    console.log(i + " =^.^=");
+    }
+};
+=============================================
+
+drawCats(5);
+=^.^=
+=^.^=
+=^.^=
+=^.^=
+=^.^=
+```
