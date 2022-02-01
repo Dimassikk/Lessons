@@ -38,5 +38,26 @@ for (var i = 0; i < input.length; i++) {
     }
     console.log(temp);
     output += temp;
+}   
+
+// Task 4
+var inputWhile = "javascript is awesome";
+var count = 0;
+var output = "";
+
+while (count < inputWhile.length) {
+    var temp = inputWhile[count];
+    if (temp === "a") {
+        // console.log("4");
+        temp = 4;
+    } else if (temp === "e") {
+        temp = 3;
+    } else if (temp === "i") {
+        temp = 1;
+    } else if (temp === "o") {
+        temp = 0;
+    }
+    console.log(temp);
+    output += temp;
+    count++;
 }
-console.log(output);
